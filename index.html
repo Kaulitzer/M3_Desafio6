@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Monedas</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Conversor de Monedas</h1>
+  </div>
+
+  <div class="container">
+    <div class="converter-wrapper">
+      <div class="converter-header">
+        <h2>Conversor de Moneda Nacional</h2>
+      </div>
+      <div class="converter-content">
+        <div class="input-wrapper">
+          <h3>Pesos CLP</h3>
+          <input type="number" id="amount" placeholder="Cantidad en pesos chilenos">
+        </div>
+        <div class="select-wrapper">
+          <h3>Moneda a convertir</h3>
+          <select id="currency">
+            <option value="" selected>Seleccione moneda</option>
+            <option value="USD">Dólar estadounidense</option>
+            <option value="EUR">Euro</option>
+            <option value="UF">Unidad de fomento</option>
+            <!-- se pueden agregar más -->
+          </select>
+          
+        </div>
+        <div class="button-wrapper">
+          <button onclick="convertCurrency()">Buscar</button>
+        </div>
+        <div id="resultContainer" class="resultContainer"></div>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="chart-header">
+        <h2>Historial del valor de la moneda</h2>
+      </div>
+      <div class="chart-content">
+        <div id="chartContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/funciones.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

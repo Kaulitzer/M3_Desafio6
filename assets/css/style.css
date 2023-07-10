@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: gray;
+  padding: 20px;
+  width: 70%;
+}
+
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.converter-wrapper,
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.converter-header,
+.chart-header {
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.converter-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-wrapper,
+.select-wrapper,
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 45vh;
+  align-items: stretch
+}
+
+.input-wrapper input,
+.select-wrapper select {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+}
+
+.button-wrapper button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#resultContainer {
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+#chartContainer {
+  height: 300px;
+  max-width: 100%;
+}
